@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import './VideoItem.css';
 class VideoItem extends Component {
     constructor(props) {
         super(props);
@@ -10,7 +10,7 @@ class VideoItem extends Component {
     }
     render() {
         return(
-            <div>
+            <div className="video-item">
                 <li onClick={this.handleVideoSelect} className="list-group-item">
                 <div className="video-list media">
                 <img className="align-self-start mr-3" src={this.props.video.url} alt={this.props.video.title} />

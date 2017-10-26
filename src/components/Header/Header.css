@@ -1,7 +1,10 @@
 .header_youtube{
+    padding-top:1%;
+    padding-bottom:1%;
     background-color: darkblue;
+    font-family: 'Indie Flower', cursive;
 }
 .header_youtube>h1{
     color:whitesmoke;
-    padding-left:20%;
+    padding-left:25%;
 }

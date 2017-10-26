@@ -2,3 +2,6 @@
     background-color: #aaa;
     color: wheat;
 }
+.video-detail>h2 {
+    font-family: 'Varela Round', sans-serif;
+}

@@ -6,7 +6,6 @@ const Youtube = {
         return new Promise(resolve => {
             YTSearch({ key: API, term: term }, (data) => {
                 resolve(data.map(video => {
-                    console.log('youtube video: ', video);
                     return {
                         title: video.snippet.title,
                         url: video.snippet.thumbnails.default.url,

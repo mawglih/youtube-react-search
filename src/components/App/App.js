@@ -21,7 +21,6 @@ class App extends Component {
   searchYoutube(term) {
     Youtube.search(term)
     .then(videos => {
-      console.log("app videos", videos);
       this.setState({
         videos: videos,
         selectedVideo: videos[0]
