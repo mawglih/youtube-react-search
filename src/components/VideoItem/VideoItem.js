@@ -3,15 +3,15 @@ import React, { Component } from 'react';
 class VideoItem extends Component {
     constructor(props) {
         super(props);
-        //this.onVideoSelect = this.onVideoSelect.bind(this);
+        this.handleVideoSelect = this.handleVideoSelect.bind(this);
     }
-    // onVideoSelect() {
-        
-    // }
+    handleVideoSelect() {
+        this.props.onVideoSelect(this.props.video);
+    }
     render() {
         return(
             <div>
-                <div onClick={this.props.onVideoSelect(this.props.video)}>
+                <li onClick={this.handleVideoSelect} className="list-group-item">
                 <div className="video-list media">
                 <img className="align-self-start mr-3" src={this.props.video.url} alt={this.props.video.title} />
                 <div className="media-body">
@@ -20,7 +20,7 @@ class VideoItem extends Component {
                     
                 </div>
                 </div>
-                </div>
+                </li>
             </div>
         )
     }

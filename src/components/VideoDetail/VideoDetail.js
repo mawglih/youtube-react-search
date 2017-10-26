@@ -17,6 +17,7 @@ const VideoDetail = ({video}) => {
                     <div>{video.title}</div>
                     <div>{video.description}</div>
                 </div>
+                <hr />
             </div>
         );
     };

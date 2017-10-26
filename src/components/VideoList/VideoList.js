@@ -8,13 +8,13 @@ class VideoList extends Component {
     render() {
         return(
             <div>
-
-                {
-                    this.props.videos.map((video) => {
+                <ul className="list-group">
+                { this.props.videos.map((video) => {
                         console.log('videolist: ', video);
                     return <VideoItem onVideoSelect={this.props.onVideoSelect} video={video} key={video.id}/>;
                 })
                 }
+                </ul>
 
             </div>
         );
