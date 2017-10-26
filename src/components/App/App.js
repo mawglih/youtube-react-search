@@ -14,6 +14,7 @@ class App extends Component {
       selectedVideo: null
     }
     this.searchYoutube = this.searchYoutube.bind(this);
+
   }
   
   searchYoutube(term) {
@@ -27,12 +28,13 @@ class App extends Component {
     });
   }
 
+
   render() {
     return (
       <div className="container">
        <SearchBar onSearch={this.searchYoutube} />
        <VideoDetail video={this.state.selectedVideo} />
-       <VideoList videos={this.state.videos}/>
+       <VideoList onVideoSelect={selectedVideo => this.setState({selectedVideo})}  videos={this.state.videos}/>
       </div>
     );
   }

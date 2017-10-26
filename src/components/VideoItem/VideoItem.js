@@ -3,15 +3,15 @@ import React, { Component } from 'react';
 class VideoItem extends Component {
     constructor(props) {
         super(props);
-        this.onVideoSelect = this.onVideoSelect.bind(this);
+        //this.onVideoSelect = this.onVideoSelect.bind(this);
     }
-    onVideoSelect() {
+    // onVideoSelect() {
         
-    }
+    // }
     render() {
         return(
             <div>
-                <div onClick={this.onVideoSelect}>
+                <div onClick={this.props.onVideoSelect(this.props.video)}>
                 <div className="video-list media">
                 <img className="align-self-start mr-3" src={this.props.video.url} alt={this.props.video.title} />
                 <div className="media-body">
