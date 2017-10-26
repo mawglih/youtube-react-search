@@ -7,9 +7,13 @@
 .button_searchbar {
     height: 3rem;
     margin: 1.5% .5% 1% 2%;
-    background-color: orangered;
+    background-color: darkcyan;
     color: whitesmoke;
     padding: 1%;
     border: 1px solid wheat;
     border-radius: 5%;
+}
+.button_searchbar:hover {
+    height:3.1rem;
+    background-color: darkblue;
 }

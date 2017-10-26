@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-
+import './VideoDetail.css';
 
 const VideoDetail = ({video}) => {
     if(!video) {
-        return <div>Loading...</div>;
+        return <div><h2>Loading...</h2></div>;
     }
     const videoId = video.id;
     const url = `https:/www.youtube.com/embed/${videoId}`;
@@ -14,7 +14,7 @@ const VideoDetail = ({video}) => {
                     {<iframe className="embed-responsive-item" src={url}></iframe>}
                 </div>
                 <div className="details">
-                    <div>{video.title}</div>
+                    <h2>{video.title}</h2>
                     <div>{video.description}</div>
                 </div>
                 <hr />

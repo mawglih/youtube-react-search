@@ -7,7 +7,7 @@ class VideoList extends Component {
     }
     render() {
         return(
-            <div>
+            <div className="col-sm-8">
                 <ul className="list-group">
                 { this.props.videos.map((video) => {
                         console.log('videolist: ', video);
